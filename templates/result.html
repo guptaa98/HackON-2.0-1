@@ -6,6 +6,14 @@
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-<h1>{{prediction}}</h1>
+	<p>jdfhjdhfjdhfjdhfjdhfjh</p>
+	<div class="results">
+		{% if prediction =="joy"%}
+		<h2 style="color:red;">joy</h2>
+		{% elif prediction =="anger"%}
+		<h2 style="color:blue;">Anger</h2>
+		{% endif %}
+	</div>
+	
 </body>
 </html>
